@@ -18,3 +18,5 @@
 .vscode/*
 
 go-example
+
+*.code-worksapce
