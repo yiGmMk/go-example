@@ -19,4 +19,4 @@
 
 go-example
 
-*.code-worksapce
+workspace.code-workspace
