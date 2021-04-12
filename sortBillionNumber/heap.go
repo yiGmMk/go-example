@@ -85,3 +85,5 @@ func HeapSortTop10(filePath string) ([]int, error) {
 	}
 	return intHeap.Number(), nil
 }
+
+func ThreadSortTop10() {}
