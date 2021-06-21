@@ -254,8 +254,8 @@ func sq(done <-chan struct{}, in <-chan int) <-chan int {
     }()
     return out
 }
-Here are the guidelines for pipeline construction:
 
+#### Here are the guidelines for pipeline construction:
 stages close their outbound channels when all the send operations are done.
 stages keep receiving values from inbound channels until those channels are closed or the senders are unblocked.
 Pipelines unblock senders either by ensuring there's enough buffer for all the values that are sent or by explicitly signalling senders when the receiver may abandon the channel.
