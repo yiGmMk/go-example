@@ -83,6 +83,7 @@ func FanOutStopReceiving() {
 	c2 := sqDone(done, in)
 
 	// can't for range out => error
+	//
 	out := mergeDone(done, c1, c2)
 	fmt.Println(<-out)
 }
